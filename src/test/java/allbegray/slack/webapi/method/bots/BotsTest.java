@@ -4,9 +4,6 @@ import allbegray.slack.SlackClientFactory;
 import allbegray.slack.type.Bot;
 import allbegray.slack.webapi.SlackWebApiClient;
 import org.junit.Before;
-import org.junit.Test;
-
-import java.io.File;
 
 /**
  * Created by allbegray on 2016-06-14.
@@ -21,7 +18,7 @@ public class BotsTest {
         webApiClient = SlackClientFactory.createWebApiClient(token);
     }
 
-    @Test
+    //@Test
     public void infoTest() {
         Bot bot = webApiClient.getBotInfo("B1GGB3U5R");
         System.out.println(bot);

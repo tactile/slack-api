@@ -125,7 +125,7 @@ public class SlackRealTimeMessagingClient {
 					}
 
 					if (!"pong".equals(type)) {
-						logger.info("Slack RTM message : " + message);
+						logger.debug("Slack RTM message : " + message);
 					}
 
 					if (type != null) {
@@ -204,4 +204,7 @@ public class SlackRealTimeMessagingClient {
 		thread.start();
 	}
 
+  public void sendMessage(String message) {
+    webSocket.sendMessage(message);
+  }
 }

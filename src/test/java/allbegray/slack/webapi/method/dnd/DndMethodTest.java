@@ -1,19 +1,13 @@
 package allbegray.slack.webapi.method.dnd;
 
-import java.util.Map;
-
 import allbegray.slack.SlackClientFactory;
-import allbegray.slack.type.Authentication;
-import allbegray.slack.type.EndSnooze;
+import allbegray.slack.type.*;
+import allbegray.slack.webapi.SlackWebApiClient;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Test;
 
-import allbegray.slack.type.DndInfo;
-import allbegray.slack.type.DndSimpleInfo;
-import allbegray.slack.type.SetSnooze;
-import allbegray.slack.webapi.SlackWebApiClient;
+import java.util.Map;
 
 public class DndMethodTest {
 
@@ -30,7 +24,7 @@ public class DndMethodTest {
 		webApiClient.shutdown();
 	}
 
-	@Test
+	//@Test
 	public void basicTest() {
 		Authentication authentication = webApiClient.auth();
 

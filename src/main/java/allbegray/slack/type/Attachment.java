@@ -152,8 +152,7 @@ public class Attachment {
     }
 
     public void setTitle_link(String title_link) {
-        SlackFieldValidationUtils.validUrl(title_link, "title_link");
-
+        //SlackFieldValidationUtils.validUrl(title_link, "title_link");
         this.title_link = title_link;
     }
 
