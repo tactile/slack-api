@@ -18,8 +18,11 @@ public class User {
 	protected Boolean has_2fa;
 	protected String two_factor_type;
 	protected Boolean has_files;
+  protected String tz;
+  protected String tz_label;
+  protected int tz_offset;
 
-	public String getId() {
+  public String getId() {
 		return id;
 	}
 
@@ -122,6 +125,30 @@ public class User {
 	public void setHas_files(Boolean has_files) {
 		this.has_files = has_files;
 	}
+
+  public String getTz() {
+    return tz;
+  }
+
+  public void setTz(String tz) {
+    this.tz = tz;
+  }
+
+  public String getTz_label() {
+    return tz_label;
+  }
+
+  public void setTz_label(String tz_label) {
+    this.tz_label = tz_label;
+  }
+
+  public int getTz_offset() {
+    return tz_offset;
+  }
+
+  public void setTz_offset(int tz_offset) {
+    this.tz_offset = tz_offset;
+  }
 
 	@Override
 	public String toString() {
