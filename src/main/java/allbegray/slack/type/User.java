@@ -20,7 +20,7 @@ public class User {
 	protected Boolean has_files;
   protected String tz;
   protected String tz_label;
-  protected int tz_offset;
+  protected Integer tz_offset;
 
   public String getId() {
 		return id;
@@ -118,7 +118,7 @@ public class User {
 		this.two_factor_type = two_factor_type;
 	}
 
-	public Boolean getHas_files() {
+  public Boolean getHas_files() {
 		return has_files;
 	}
 
@@ -142,11 +142,11 @@ public class User {
     this.tz_label = tz_label;
   }
 
-  public int getTz_offset() {
+  public Integer getTz_offset() {
     return tz_offset;
   }
 
-  public void setTz_offset(int tz_offset) {
+  public void setTz_offset(Integer tz_offset) {
     this.tz_offset = tz_offset;
   }
 
