@@ -7,9 +7,11 @@ public class Team {
 
 	protected String id;
 	protected String name;
-	protected String doamin;
+	protected String domain;
 	protected String email_domain;
 	protected Icon icon;
+	protected String enterprise_id;
+	protected String enterprise_name;
 
 	public String getId() {
 		return id;
@@ -19,12 +21,12 @@ public class Team {
 		this.id = id;
 	}
 
-	public String getDoamin() {
-		return doamin;
+	public String getDomain() {
+		return domain;
 	}
 
-	public void setDoamin(String doamin) {
-		this.doamin = doamin;
+	public void setDoamin(String domain) {
+		this.domain = domain;
 	}
 
 	public String getEmail_domain() {
@@ -50,10 +52,27 @@ public class Team {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public String getEnterprise_id() {
+    return enterprise_id;
+  }
+
+  public void setEnterprise_id(String enterprise_id) {
+    this.enterprise_id = enterprise_id;
+  }
+
+  public String getEnterprise_name() {
+    return enterprise_name;
+  }
+
+  public void setEnterprise_name(String enterprise_name) {
+    this.enterprise_name = enterprise_name;
+  }
+
 
 	@Override
 	public String toString() {
-		return "Team [id=" + id + ", name=" + name + ", doamin=" + doamin + ", email_domain=" + email_domain + "]";
+		return "Team [id=" + id + ", name=" + name + ", domain=" + domain + ", email_domain=" + email_domain + "]";
 	}
 
 }
