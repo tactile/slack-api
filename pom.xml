@@ -23,6 +23,11 @@
 					<name>tact-snapshots</name>
 					<url>https://tact.jfrog.io/tact/maven-snapshots</url>
 			</snapshotRepository>
+			<repository>
+					<id>artifactory</id>
+					<name>tact-releases</name>
+					<url>https://tact.jfrog.io/tact/maven-releases</url>
+			</repository>
 	</distributionManagement>
 
 	<dependencies>
