@@ -4,6 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>allbegray</groupId>
 	<artifactId>slack-api</artifactId>
+	<packaging>jar</packaging>
 	<version>1.3.0-RELEASE</version>
 
 	<properties>
@@ -20,7 +21,7 @@
 			<snapshotRepository>
 					<id>artifactory</id>
 					<name>tact-snapshots</name>
-					<url>https://tact.jfrog.io/tact/maven-snapshots</url>
+					<url>https://tact.jfrog.io/tact/maven-snapshots</url>https://tact.jfrog.io/artifactory/maven-snapshots/tactile
 			</snapshotRepository>
 	</distributionManagement>
 
@@ -90,6 +91,18 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>2.0</version>
+					<configuration>
+							<archive>
+									<manifestEntries>
+											<Implementation-Build>${buildNumber}</Implementation-Build>
+									</manifestEntries>
+							</archive>
+					</configuration>
 			</plugin>
 		</plugins>
 	</build>
